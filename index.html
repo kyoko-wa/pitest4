@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>円周率記憶チェックアプリ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>円周率記憶チェック</h1>
+  <label for="rangeSelect">範囲を選択：</label>
+  <select id="rangeSelect">
+    <option value="1-100">1〜100</option>
+    <option value="101-200">101〜200</option>
+    <option value="201-300">201〜300</option>
+    <option value="301-400">301〜400</option>
+    <option value="401-500">401〜500</option>
+    <option value="1-500">1〜500</option>
+    <option value="501-1000">501〜1000</option>
+    <option value="1001-1500">1001〜1500</option>
+    <option value="1501-2000">1501〜2000</option>
+  </select>
+  <br><br>
+  <textarea id="inputArea" rows="6" cols="80" placeholder="ここに数字を入力（スペースなし）"></textarea>
+  <br><br>
+  <button onclick="startTimer()">スタート</button>
+  <button onclick="stopAndCheck()">ストップして判定</button>
+  <p id="timer">00:00</p>
+  <div id="result"></div>
+  <script src="app.js"></script>
+</body>
+</html>
